@@ -13,12 +13,24 @@ namespace CalculadoraIMC
         private void btDel_Click(object sender, EventArgs e)
         //Limpar a Àrea txt Peso e Altura
         {
-            txtPeso.Clear();
-            txtAltura.Clear();
+            
+            if (txtPeso.Focused) // Apaga apenas na área do Peso 
+            {
+                txtPeso.Clear();
+            }
+            else if (txtAltura.Focused)
+            {
+                txtAltura.Clear(); // Apaga apenas na área do Altura
+            }
+            else
+            {
+                // Mensagem caso não tiver selecionado a área para apagar
+                MessageBox.Show("Selecione o campo que deseja apagar (Peso ou Altura).", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void AdicionarNumeros(object sender, EventArgs e)
-        // Digitar os numeros dentro das areas
+        // Digitar os numeros dentro das areas Peso e Altura
         {
             Button numeros = sender as Button;
 
@@ -82,7 +94,7 @@ namespace CalculadoraIMC
                 txtIMC.Text = imc.ToString("F2"); // Mostra o IMC com 2 casas decimais
 
 
-                {
+                { // Mostrar ao Usuário o Resultado do Cálculo IMC
 
                     if (imc < 19.1)
                     {
@@ -96,11 +108,10 @@ namespace CalculadoraIMC
                     {
                         lblSituacao.Text = "Acima do Peso";
                     }
-                    else
+                    else if (imc < 32.3)
                     {
                         lblSituacao.Text = "Obeso";
                     }
-
                     MessageBox.Show($"Seu IMC é {imc:F2} - {lblSituacao.Text}", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }

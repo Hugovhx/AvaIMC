@@ -60,7 +60,7 @@
             // 
             // btSete
             // 
-            btSete.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btSete.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btSete.Location = new Point(29, 29);
             btSete.Name = "btSete";
             btSete.Size = new Size(69, 49);
@@ -71,7 +71,7 @@
             // 
             // btOito
             // 
-            btOito.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btOito.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btOito.Location = new Point(106, 29);
             btOito.Name = "btOito";
             btOito.Size = new Size(72, 49);
@@ -82,6 +82,7 @@
             // 
             // btNove
             // 
+            btNove.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btNove.Location = new Point(184, 29);
             btNove.Name = "btNove";
             btNove.Size = new Size(66, 49);
@@ -92,6 +93,7 @@
             // 
             // btQuatro
             // 
+            btQuatro.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btQuatro.Location = new Point(29, 84);
             btQuatro.Name = "btQuatro";
             btQuatro.Size = new Size(69, 50);
@@ -102,6 +104,7 @@
             // 
             // btCinco
             // 
+            btCinco.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btCinco.Location = new Point(106, 84);
             btCinco.Name = "btCinco";
             btCinco.Size = new Size(72, 50);
@@ -112,6 +115,7 @@
             // 
             // btSeis
             // 
+            btSeis.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btSeis.Location = new Point(184, 84);
             btSeis.Name = "btSeis";
             btSeis.Size = new Size(66, 50);
@@ -122,6 +126,7 @@
             // 
             // btUm
             // 
+            btUm.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btUm.Location = new Point(29, 140);
             btUm.Name = "btUm";
             btUm.Size = new Size(71, 52);
@@ -132,6 +137,7 @@
             // 
             // btDois
             // 
+            btDois.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btDois.Location = new Point(106, 140);
             btDois.Name = "btDois";
             btDois.Size = new Size(72, 52);
@@ -142,6 +148,7 @@
             // 
             // btTres
             // 
+            btTres.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btTres.Location = new Point(184, 140);
             btTres.Name = "btTres";
             btTres.Size = new Size(66, 52);
@@ -152,6 +159,7 @@
             // 
             // btVirgula
             // 
+            btVirgula.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btVirgula.Location = new Point(29, 198);
             btVirgula.Name = "btVirgula";
             btVirgula.Size = new Size(71, 40);
@@ -162,6 +170,7 @@
             // 
             // btZero
             // 
+            btZero.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btZero.Location = new Point(106, 198);
             btZero.Name = "btZero";
             btZero.Size = new Size(72, 40);
@@ -172,6 +181,7 @@
             // 
             // btDel
             // 
+            btDel.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btDel.Location = new Point(184, 199);
             btDel.Name = "btDel";
             btDel.Size = new Size(66, 40);
@@ -182,6 +192,7 @@
             // 
             // btCalcular
             // 
+            btCalcular.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btCalcular.Location = new Point(41, 488);
             btCalcular.Name = "btCalcular";
             btCalcular.Size = new Size(221, 40);
@@ -232,66 +243,66 @@
             // 
             lblSituacao.AutoSize = true;
             lblSituacao.Enabled = false;
-            lblSituacao.Font = new Font("Verdana", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblSituacao.Font = new Font("Verdana", 18F, FontStyle.Bold);
             lblSituacao.ForeColor = SystemColors.AppWorkspace;
             lblSituacao.Location = new Point(15, 194);
             lblSituacao.Name = "lblSituacao";
-            lblSituacao.Size = new Size(83, 18);
+            lblSituacao.Size = new Size(128, 29);
             lblSituacao.TabIndex = 10;
             lblSituacao.Text = "Situação";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Verdana", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Verdana", 12F, FontStyle.Bold);
             label7.ForeColor = SystemColors.AppWorkspace;
             label7.Location = new Point(195, 106);
             label7.Name = "label7";
-            label7.Size = new Size(21, 16);
+            label7.Size = new Size(24, 18);
             label7.TabIndex = 9;
             label7.Text = "m";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Verdana", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Verdana", 12F, FontStyle.Bold);
             label6.ForeColor = SystemColors.AppWorkspace;
             label6.Location = new Point(195, 57);
             label6.Name = "label6";
-            label6.Size = new Size(25, 16);
+            label6.Size = new Size(31, 18);
             label6.TabIndex = 8;
             label6.Text = "Kg";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Verdana", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Verdana", 12F, FontStyle.Bold);
             label5.ForeColor = SystemColors.AppWorkspace;
             label5.Location = new Point(63, 160);
             label5.Name = "label5";
-            label5.Size = new Size(35, 16);
+            label5.Size = new Size(43, 18);
             label5.TabIndex = 7;
             label5.Text = "IMC";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Verdana", 12F, FontStyle.Bold);
             label4.ForeColor = SystemColors.AppWorkspace;
-            label4.Location = new Point(50, 106);
+            label4.Location = new Point(39, 106);
             label4.Name = "label4";
-            label4.Size = new Size(50, 16);
+            label4.Size = new Size(61, 18);
             label4.TabIndex = 6;
             label4.Text = "Altura";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Verdana", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Verdana", 12F, FontStyle.Bold);
             label3.ForeColor = SystemColors.AppWorkspace;
-            label3.Location = new Point(62, 57);
+            label3.Location = new Point(49, 57);
             label3.Name = "label3";
-            label3.Size = new Size(42, 16);
+            label3.Size = new Size(51, 18);
             label3.TabIndex = 5;
             label3.Text = "Peso";
             // 
