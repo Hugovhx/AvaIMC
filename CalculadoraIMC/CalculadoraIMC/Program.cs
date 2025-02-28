@@ -1,4 +1,4 @@
-namespace Avaliação
+namespace CalculadoraIMC
 {
     internal static class Program
     {
